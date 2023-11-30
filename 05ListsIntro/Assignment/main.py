@@ -105,3 +105,38 @@ print("mostly_true: ")
 print([True, False, True], mostly_true([True, False, True]))
 print([False, False, False], mostly_true([False, False, False]))
 
+def make_copy(items):
+    first = items[0]
+    second = items[1]
+    third = items[2]
+
+    return [first, second, third]
+
+original_list = [1, 2, 3]
+copy_of_list = make_copy(original_list)
+print("original list: ", original_list)
+print("copy of list, ", copy_of_list)
+
+
+def repeat_thrice(number):
+    integer = number[0]
+
+    return[integer, integer, integer]
+
+original_number = [5]
+copies = repeat_thrice(original_number)
+print("original number: ", original_number)
+print("copies: ", copies)
+
+
+def make_reversed_copy(items):
+    first = items[0]
+    second = items[1]
+    third = items[2]
+
+    return [third, second, first]
+original_list = [5, 6, 7]
+reversed_list = make_reversed_copy(original_list)
+print("original_list: ", original_list)
+print("reversed list: ", reversed_list)
+
