@@ -36,9 +36,27 @@ returnvalue = number_sum(inputlist)
 print(returnvalue)
 
 
-def average_act_score(items):
-    total = 0
-    for number in items:
-        if number >= 1 and number <= 36:
-            total = total + 1
+#def average_act_score(items):
+    #total = 0
+    #for number in items:
+        #if number >= 1 and number <= 36:
+            #total = total + 1
+        #else:
+
+
+def all_true(items):
+    for item in items:
+        if item 
+
+
+def has_vowel(letters):
+    for letter in letters:
+        if letter in ["a", "e", "i", "o", "u"]:
+            return True
         else:
+            return False
+        
+print(has_vowel(["a", "b,", "c", "d"]))
+print(has_vowel(["s", "q", "m", "h"]))
+print(has_vowel(["p", "r", "i", "x"]))
+
