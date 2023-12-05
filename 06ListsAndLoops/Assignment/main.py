@@ -46,7 +46,7 @@ print(returnvalue)
 
 def all_true(items):
     for item in items:
-        if item 
+        if 
 
 
 def has_vowel(letters):
