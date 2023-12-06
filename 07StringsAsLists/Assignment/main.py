@@ -33,19 +33,47 @@ print(count_numbers("oisa34jlk5"))
 
 
 
-def count_target_letters(word, character):
-     count = 0
-     character = "e"
-     for letter in word:
-          if letter == character:
-               count = count + 1
-     return count
+#def count_target_letters(word, character):
+#     count = 0
+#     character = "e"
+#     for letter in word:
+#          if letter == character:
+#               count = count + 1
+#     return count
 
-input = "elephant"
-returnvalue = count_target_letters(input)
-print(returnvalue)
+#input = "elephant"
+#returnvalue = count_target_letters(input)
+#print(returnvalue)
 
 
-def in_alphabetical_order(string):
+def alternate_case(string):
+     currently_uppercase = True
+     result  = ""
      for letter in string:
-          
+          if letter == True:
+               result = result + letter
+          elif letter == False:
+               result = result + letter.upper()
+     return result
+
+print(alternate_case("elephant"))
+
+
+def remove_vowels(string):
+     result = []
+     for letter in string:
+          if letter in "aeiou":
+               pass
+          else:
+               result.append(letter)
+     return result
+
+print(remove_vowels("great"))
+
+
+def to_snake_case(string):
+     for letter in string:
+          if letter == " ":
+               
+               :(
+
