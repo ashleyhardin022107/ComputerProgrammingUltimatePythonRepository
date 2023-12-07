@@ -50,7 +50,7 @@ def alternate_case(string):
      currently_uppercase = True
      result  = ""
      for letter in string:
-          if letter == True:
+          if currently_uppercase == True:
                result = result + letter
           elif letter == False:
                result = result + letter.upper()
@@ -72,8 +72,26 @@ print(remove_vowels("great"))
 
 
 def to_snake_case(string):
+     result = ""
      for letter in string:
           if letter == " ":
+               result = result + "_"
+          else:
+               result = result + letter
+     return result
+ 
+print(to_snake_case("hello world"))
+print(to_snake_case("to snake case"))
                
-               :(
 
+
+def filter_valid_act_scores(input):
+     result = []
+     for number in input:
+          if number <= 1 and number >= 36:
+               pass
+          else:
+               result.append(number)
+     return result
+          
+print(filter_valid_act_scores("12, 32, 81, 28, 67, 52"))

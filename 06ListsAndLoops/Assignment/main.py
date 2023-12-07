@@ -52,11 +52,10 @@ def all_true(items):
 def has_vowel(letters):
     for letter in letters:
         if letter in ["a", "e", "i", "o", "u"]:
-            return True
+            return 
         else:
             return False
         
 print(has_vowel(["a", "b,", "c", "d"]))
 print(has_vowel(["s", "q", "m", "h"]))
 print(has_vowel(["p", "r", "i", "x"]))
-
