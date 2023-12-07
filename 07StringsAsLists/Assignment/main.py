@@ -52,7 +52,7 @@ def alternate_case(string):
      for letter in string:
           if currently_uppercase == True:
                result = result + letter
-          elif letter == False:
+          elif currently_uppercase == False:
                result = result + letter.upper()
      return result
 
@@ -71,6 +71,24 @@ def remove_vowels(string):
 print(remove_vowels("great"))
 
 
+def to_camel_case(string):
+     result = []
+     next_upper = True
+     for letter in string:
+          if next_upper == True:
+               result = result + letter
+          elif next_upper == True:
+               result = result + letter.upper()
+               next_upper == False
+          elif letter == " ":
+               pass
+          else:
+               result = result + letter
+     return result
+
+print(to_camel_case("to camel case"))
+
+
 def to_snake_case(string):
      result = ""
      for letter in string:
@@ -82,8 +100,10 @@ def to_snake_case(string):
  
 print(to_snake_case("hello world"))
 print(to_snake_case("to snake case"))
-               
 
+
+#def without_duplicates(input):
+              
 
 def filter_valid_act_scores(input):
      result = []
