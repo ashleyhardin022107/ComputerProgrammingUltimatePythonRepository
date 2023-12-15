@@ -1,4 +1,5 @@
 import csv
+import json
 import os
 
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
@@ -120,3 +121,34 @@ f.close()
 #     if percent < 60:
 #         namelist = namelist + name
         
+
+f = open("../data/1000-largest-us-cities.json", "r")
+data = json.load(f)
+state = json.load(f)
+f.close()
+
+cities_in_kansas = 0
+for city in data:
+    if data["state"] == "Kansas":
+        all_cities = all_cities + state
+
+#print("Cities in Kansas: ", cities_in_kansas)
+
+
+f = open("../data/1000-largest-us-cities.json", "r")
+data = json.open(f)
+f.close()
+
+def find_longest_city_name(wordlist): 
+    longest_city_name = ""
+    for city_name in data:
+        if len(city_name) > len(longest_city_name):
+            longest_city_name = city_name
+    return longest_city_name
+
+find_longest_city_name()
+
+
+
+
+
