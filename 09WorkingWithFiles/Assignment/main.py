@@ -149,6 +149,26 @@ def find_longest_city_name(wordlist):
 find_longest_city_name()
 
 
+f = open("..?data?1000-largest-us-cities.json", "r")
+growth_from_2000_to_2013 = json.open(f)
+f.close()
 
+def fastest_growth(data_list):
+    growth = 0
+    for growth_data in data_list:
+        if len(growth_data) > len(growth):
+            growth = growth_data
+    return growth
+
+fastest_growth()
+
+def fastest_shrinking(data_list):
+    shrinkage = 0
+    for shrinkage_data in data_list:
+        if len(shrinkage_data) < len(shrinkage):
+            shrinkage = shrinkage_data
+    return shrinkage
+
+fastest_growth()
 
 
